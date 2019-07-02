@@ -14,6 +14,7 @@
         "copy-webpack-plugin": "^5.0.2",
         "core-js": "^3.0.0",
         "event-hooks-webpack-plugin": "^2.1.1",
+        "file-loader": "^4.0.0",
         "globby": "^9.2.0",
         "patternlab-node": "^2.12.0",
         "styleguidekit-assets-default": "^3.5.2",
@@ -33,8 +34,8 @@
     "scripts": {
         "start": "run-p patternlab:serve",
         "webpack:version": "webpack --v",
-        "patternlab:build": "webpack --mode=production --env.production",
-        "patternlab:serve": "webpack-dev-server --mode=development --env.development",
+        "patternlab:build": "webpack --mode=development --env.production",
+        "patternlab:serve": "webpack-dev-server --mode=development --env.production",
         "patternlab:version": "node patternlab.js version",
         "patternlab:help": "node patternlab.js help",
         "patternlab:patternsonly": "node patternlab.js patternsonly",
@@ -63,7 +64,16 @@
         ]
     },
     "devDependencies": {
+        "autoprefixer": "^9.6.0",
+        "css-loader": "^3.0.0",
+        "import-glob-loader": "^1.1.0",
+        "mini-css-extract-plugin": "^0.7.0",
+        "node-sass": "^4.12.0",
         "npm-run-all": "^4.1.5",
+        "postcss-flexbugs-fixes": "^4.1.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
         "webpack-cli": "^3.3.0",
         "webpack-dev-server": "^3.2.1"
     }
