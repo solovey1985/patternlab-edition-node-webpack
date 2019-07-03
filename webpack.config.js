@@ -175,6 +175,5 @@ module.exports = env => {
     },
     customization(env)
   );
-
   return config;
 };

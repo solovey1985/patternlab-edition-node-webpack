@@ -34,8 +34,8 @@
     "scripts": {
         "start": "run-p patternlab:serve",
         "webpack:version": "webpack --v",
-        "patternlab:build": "webpack --mode=development --env.production",
-        "patternlab:serve": "webpack-dev-server --mode=development --env.production",
+        "patternlab:build": "webpack --mode=production --env.production",
+        "patternlab:serve": "webpack-dev-server --mode=production --env.production",
         "patternlab:version": "node patternlab.js version",
         "patternlab:help": "node patternlab.js help",
         "patternlab:patternsonly": "node patternlab.js patternsonly",
