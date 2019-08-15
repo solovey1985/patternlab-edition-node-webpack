@@ -30,7 +30,7 @@ module.exports = env => {
 
         plugins: [
             new MiniCssExtractPlugin({
-                filename: "style.css"
+                filename: "css/style.css"
             }),
             new webpack.DefinePlugin({
                 NAMESPACE: appNamespace
@@ -58,11 +58,7 @@ module.exports = env => {
                             loader: ifDevelopment(
                                 "style-loader",
                                 MiniCssExtractPlugin.loader
-
                             ),
-                            options: {
-                                publicPath: '../css',
-                            },
                         },
                         {
                             loader: "css-loader"
