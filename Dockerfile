@@ -12,4 +12,4 @@ RUN npm rebuild node-sass
 
 CMD node server.js
 
-EXPOSE 8060
+EXPOSE 80
