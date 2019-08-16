@@ -54,7 +54,7 @@
     "defaultPattern": "all",
     "defaultShowPatternInfo": false,
     "cleanPublic": true,
-    "patternExtension": "mustache",
+    "patternExtension": ["mustache", "mst"],
     "debug": false,
     "ishControlsHide": {
         "s": false,
