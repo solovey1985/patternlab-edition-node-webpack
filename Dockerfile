@@ -1,14 +1,20 @@
 FROM node:11-alpine
 
-RUN mkdir -p /usr/src/app
+RUN ls
 
-WORKDIR /usr/src/app
+RUN mkdir /app
 
-COPY . .
+COPY . ./app
+
+WORKDIR /app
+
+RUN ls
 
 RUN npm install
 
 RUN npm rebuild node-sass
+
+RUN npm run patternlab:build
 
 CMD node server.js
 

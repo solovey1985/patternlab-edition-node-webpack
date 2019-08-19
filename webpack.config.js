@@ -72,6 +72,12 @@ module.exports = env => {
             to: resolve(plConfig.paths.public.root)
           },
           {
+            // Copy favicon from source to public
+            context: resolve(plConfig.paths.source.js),
+            from: "./*.ico",
+            to: resolve(plConfig.paths.public.js)
+          },
+          {
             // Copy all web fonts from source to public
             context: resolve(plConfig.paths.source.fonts),
             from: "./*",
