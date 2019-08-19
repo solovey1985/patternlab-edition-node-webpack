@@ -24,8 +24,8 @@
  *    second-tier application colors.
  *
  */
- $color-brand-green: #d31071ef;
- $color-brand-green-dark: #c2120b;
+ $color-brand-green:#fbab7e;
+ $color-brand-green-dark: #f7ce68;
 
 /*
  * Neutral Colors
@@ -103,7 +103,7 @@ $color-border: $color-gray-50;
     #TYPOGRAPHY
 \*------------------------------------*/
 
-$font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$font : "Roboto", "Helvetica", "Arial", sans-serif;
 $font-secondary : Georgia, Times, "Times New Roman", serif;
 
 $font-size-small : 0.75rem;
