@@ -1,0 +1,22 @@
+.dropdown-toggle:hover + .dropdown-menu{
+    visibility: visible;
+}
+
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+    display: flex;
+    flex-flow: column;
+    background-color: $color-background; 
+    transition: width ease-in-out(0.075, 0.82, 0.165, 1);
+    &:hover{
+        visibility: visible;
+    }
+}
+
+.dropdown-item{
+    color: black;
+}
+
+
+
